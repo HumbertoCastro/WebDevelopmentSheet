@@ -1,0 +1,17 @@
+.MainPage {
+  width: calc(60vw - var(--navwidth));
+  margin-right: 10vw;
+  font-weight: 400;
+  color: rgb(35 39 47);
+  margin: calc(var(--headerheigth) + 5vh) auto;
+}
+
+.MainPage h1 {
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.MainPage p {
+  margin-bottom: 3vh;
+}
