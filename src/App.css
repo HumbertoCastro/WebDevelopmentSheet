@@ -17,6 +17,10 @@ body {
   width: 100vmin;
 }
 
+.font {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .App {
   overflow-y: none;
   min-height: 100vh;

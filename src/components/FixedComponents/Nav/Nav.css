@@ -36,6 +36,7 @@
 }
 
 .sub-btn {
+  flex-wrap: nowrap;
   margin-top: var(--topmargin);
 }
 

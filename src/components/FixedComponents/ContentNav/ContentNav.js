@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import './ContentNav.css';
 import pocketContext from '../../../context/pocketContext';
 import svgs from '../../../Helpers/svg';
+import logo from '../../../Helpers/logo192.png'
 
 const ContentNav = ({ dificult }) => {
   const [open, setOpen] = useState(false);
   const {
     setPage,
     setTitle,
+    title,
   } = useContext(pocketContext);
 
 
@@ -36,6 +38,11 @@ const ContentNav = ({ dificult }) => {
                   setPage(y.conteudo);
                   setTitle(`${content[0]}, ${y.text}`)
                 }}>
+                  {
+                    title === `${content[0]}, ${y.text}` ? 
+                    <img src={ logo } className='side-logo' alt='imglogo'/> :
+                    null
+                  }
                   { y.text }
                 </div>
               )
