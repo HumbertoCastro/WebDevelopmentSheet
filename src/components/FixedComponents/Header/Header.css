@@ -25,3 +25,18 @@
   align-self: center;
   margin-right: 5vw;
 }
+
+.nav-icons {
+  align-items: center;
+  justify-content: space-around;
+  width: 10vw;
+}
+
+.btn-icon svg {
+  width: 3vw;
+  height: 2vw;
+}
+
+.react-icon svg {
+  filter: saturate(100%) brightness(0%);
+}

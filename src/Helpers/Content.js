@@ -271,7 +271,8 @@ export const contentReact = [
               <h2>Com Componentização</h2>
               <p>
                 Agora, vamos usar a componentização para criar um componente{" "}
-                <code>TaskButton</code> para o botão de conclusão:
+                <code className="code">TaskButton</code> para o botão de
+                conclusão:
               </p>
               <CodeBlock
                 language="javascript"
@@ -288,7 +289,8 @@ export const contentReact = [
               />
               <p>
                 Agora, em qualquer lugar que você precise usar o botão, você
-                simplesmente importa o componente <code>TaskButton</code>:
+                simplesmente importa o componente{" "}
+                <code className="code">TaskButton</code>:
               </p>
               <CodeBlock
                 language="javascript"
@@ -310,8 +312,8 @@ export const contentReact = [
               />
               <p>
                 Se você precisar fazer uma alteração no botão, basta fazer isso
-                no arquivo <code>TaskButton.js</code>. Todas as instâncias do
-                botão serão atualizadas automaticamente.
+                no arquivo <code className="code">TaskButton.js</code>. Todas as
+                instâncias do botão serão atualizadas automaticamente.
               </p>
 
               <h2>Benefícios</h2>
@@ -354,8 +356,9 @@ export const contentReact = [
               <h2>Utilizando o Comando create-react-component</h2>
               <p>
                 Depois de instalado, você pode usar o comando{" "}
-                <code>Generate React CLI</code> para criar um novo componente.
-                Basta fornecer o nome do componente como argumento:
+                <code className="code">Generate React CLI</code> para criar um
+                novo componente. Basta fornecer o nome do componente como
+                argumento:
               </p>
               <CodeBlock
                 language="bash"
@@ -600,7 +603,8 @@ export const contentReact = [
                 </li>
                 <li>
                   <strong>Hooks:</strong> Com os Hooks, como{" "}
-                  <code>useState</code> e <code>useEffect</code>, os componentes
+                  <code className="code">useState</code> e{" "}
+                  <code className="code">useEffect</code>, os componentes
                   funcionais podem gerenciar estado e ciclos de vida sem a
                   necessidade de classes.
                 </li>
@@ -610,10 +614,11 @@ export const contentReact = [
               <p>
                 Componentes funcionais são ideais para criar interfaces de
                 usuário reativas, gerenciar o estado local usando{" "}
-                <code>useState</code>, realizar efeitos colaterais usando{" "}
-                <code>useEffect</code> e muito mais. Tarefas como renderização
-                condicional, iteração de listas e manipulação de eventos também
-                são bem realizadas em componentes funcionais.
+                <code className="code">useState</code>, realizar efeitos
+                colaterais usando <code className="code">useEffect</code> e
+                muito mais. Tarefas como renderização condicional, iteração de
+                listas e manipulação de eventos também são bem realizadas em
+                componentes funcionais.
               </p>
 
               <h2>Dicas para Componentes Funcionais</h2>
@@ -623,14 +628,14 @@ export const contentReact = [
                   estados de forma clara e concisa.
                 </li>
                 <li>
-                  Use o <code>useState</code> para gerenciar estados locais.
-                  Lembre-se de que os estados em componentes funcionais são
-                  independentes e não interferem uns nos outros.
+                  Use o <code className="code">useState</code> para gerenciar
+                  estados locais. Lembre-se de que os estados em componentes
+                  funcionais são independentes e não interferem uns nos outros.
                 </li>
                 <li>
-                  Use <code>useEffect</code> para realizar efeitos colaterais,
-                  como buscar dados de uma API, atualizar o título da página,
-                  entre outros.
+                  Use <code className="code">useEffect</code> para realizar
+                  efeitos colaterais, como buscar dados de uma API, atualizar o
+                  título da página, entre outros.
                 </li>
                 <li>
                   Aplique o princípio de composição, dividindo componentes
@@ -668,9 +673,10 @@ export const contentReact = [
               <h2>Como Usar o Operador Lógico Ternário</h2>
               <p>
                 O operador lógico ternário (
-                <code>condition ? trueValue : falseValue</code>) é uma maneira
-                concisa de realizar renderização condicional. Ele avalia uma
-                condição e renderiza um valor ou outro com base nessa condição.
+                <code className="code">condition ? trueValue : falseValue</code>
+                ) é uma maneira concisa de realizar renderização condicional.
+                Ele avalia uma condição e renderiza um valor ou outro com base
+                nessa condição.
               </p>
               <CodeBlock
                 language="jsx"
@@ -790,10 +796,10 @@ export default App;
               </p>
 
               <p>
-                Por exemplo, imagine a passagem de uma prop <code>nome</code>{" "}
-                através de vários níveis de componentes apenas para exibi-la em
-                um componente filho final. Isso torna o código menos legível e
-                mais suscetível a erros.
+                Por exemplo, imagine a passagem de uma prop{" "}
+                <code className="code">nome</code> através de vários níveis de
+                componentes apenas para exibi-la em um componente filho final.
+                Isso torna o código menos legível e mais suscetível a erros.
               </p>
 
               <h2>Alternativa: Estado Global</h2>
@@ -828,9 +834,10 @@ export default App;
               <h1>Passagem de Dados para Componentes no React</h1>
               <h3>Exemplo de Passagem de Dados</h3>
               <p>
-                Imagine um componente <code>Card</code> que exibe informações de
-                um usuário. Utilizando a notação <code>props.variavel</code>{" "}
-                você pode acessar os dados das props diretamente.
+                Imagine um componente <code className="code">Card</code> que
+                exibe informações de um usuário. Utilizando a notação{" "}
+                <code className="code">props.variavel</code> você pode acessar
+                os dados das props diretamente.
               </p>
               <CodeBlock
                 language="jsx"
@@ -851,8 +858,8 @@ export default Card;
               />
 
               <p>
-                Ao usar o componente <code>Card</code>, você passa os dados do
-                usuário como props.
+                Ao usar o componente <code className="code">Card</code>, você
+                passa os dados do usuário como props.
               </p>
               <CodeBlock
                 language="jsx"
@@ -922,12 +929,13 @@ export default Card;
               <p>
                 A passagem de dados para componentes é uma prática fundamental
                 no React, permitindo que você crie interfaces dinâmicas e
-                personalizadas. Utilizando a notação <code>props.variavel</code>{" "}
-                você pode acessar os dados das props diretamente, enquanto a
-                desestruturação dentro do componente torna o código mais
-                legível. Através do uso de props, você pode transmitir
-                informações eficientemente entre diferentes componentes,
-                aumentando a modularidade e a reusabilidade do seu código.
+                personalizadas. Utilizando a notação{" "}
+                <code className="code">props.variavel</code> você pode acessar
+                os dados das props diretamente, enquanto a desestruturação
+                dentro do componente torna o código mais legível. Através do uso
+                de props, você pode transmitir informações eficientemente entre
+                diferentes componentes, aumentando a modularidade e a
+                reusabilidade do seu código.
               </p>
             </div>
           ),
@@ -947,10 +955,10 @@ export default Card;
 
               <h3>Exemplo de Uso de Props</h3>
               <p>
-                Suponha que você tenha um componente de <code>Botao</code> que
-                precisa exibir um texto específico e ter diferentes estilos.
-                Usando props, você pode configurar esse botão de várias
-                maneiras.
+                Suponha que você tenha um componente de{" "}
+                <code className="code">Botao</code> que precisa exibir um texto
+                específico e ter diferentes estilos. Usando props, você pode
+                configurar esse botão de várias maneiras.
               </p>
               <CodeBlock
                 language="jsx"
@@ -975,8 +983,8 @@ export default Botao;
               />
 
               <p>
-                Ao utilizar o componente <code>Botao</code>, você pode
-                configurá-lo com diferentes props:
+                Ao utilizar o componente <code className="code">Botao</code>,
+                você pode configurá-lo com diferentes props:
               </p>
               <CodeBlock
                 language="jsx"
@@ -1058,8 +1066,9 @@ export default App;
 
               <h3>Exemplo de Passagem de Callback</h3>
               <p>
-                Imagine um componente <code>Pai</code> passando uma função de
-                callback para um componente <code>Filho</code>.
+                Imagine um componente <code className="code">Pai</code> passando
+                uma função de callback para um componente{" "}
+                <code className="code">Filho</code>.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1148,15 +1157,16 @@ export default Pai;
               <h2>Como Usar o Estado em Componentes Funcionais</h2>
               <p>
                 Em componentes funcionais, você pode usar o{" "}
-                <strong>hook</strong> <code>useState</code> para adicionar
-                estado ao seu componente. O hook <code>useState</code> retorna
-                um valor do estado atual e uma função para atualizá-lo.
+                <strong>hook</strong> <code className="code">useState</code>{" "}
+                para adicionar estado ao seu componente. O hook{" "}
+                <code className="code">useState</code> retorna um valor do
+                estado atual e uma função para atualizá-lo.
               </p>
 
               <h3>Exemplo de Uso do Estado</h3>
               <p>
-                Imagine um componente de <code>Contador</code> que exibe e
-                atualiza um número.
+                Imagine um componente de <code className="code">Contador</code>{" "}
+                que exibe e atualiza um número.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1209,9 +1219,10 @@ export default ContadorFuncional;
               <p>
                 O estado do componente é um conceito fundamental no React,
                 permitindo que você crie interfaces dinâmicas e interativas.
-                Utilizando o hook <code>useState</code>, você pode adicionar e
-                atualizar o estado em componentes funcionais, tornando sua
-                experiência de usuário mais envolvente e responsiva.
+                Utilizando o hook <code className="code">useState</code>, você
+                pode adicionar e atualizar o estado em componentes funcionais,
+                tornando sua experiência de usuário mais envolvente e
+                responsiva.
               </p>
             </div>
           ),
@@ -1239,41 +1250,43 @@ export default ContadorFuncional;
               <ul>
                 <li>
                   <strong>
-                    <code>useState</code>:
+                    <code className="code">useState</code>:
                   </strong>{" "}
                   Para gerenciar estados.
                 </li>
                 <li>
                   <strong>
-                    <code>useEffect</code>:
+                    <code className="code">useEffect</code>:
                   </strong>{" "}
                   Para efeitos colaterais, simulação de{" "}
-                  <code>componentDidMount</code>,{" "}
-                  <code>componentDidUpdate</code> e{" "}
-                  <code>componentWillUnmount</code>.
+                  <code className="code">componentDidMount</code>,{" "}
+                  <code className="code">componentDidUpdate</code> e{" "}
+                  <code className="code">componentWillUnmount</code>.
                 </li>
                 <li>
                   <strong>
-                    <code>useContext</code>:
+                    <code className="code">useContext</code>:
                   </strong>{" "}
                   Para acessar o contexto da aplicação.
                 </li>
                 <li>
                   <strong>
-                    <code>useReducer</code>:
+                    <code className="code">useReducer</code>:
                   </strong>{" "}
                   Para gerenciar estados complexos.
                 </li>
               </ul>
 
               <h3>
-                Exemplo de Uso do Hook <code>useEffect</code> para Montagem da
-                Página
+                Exemplo de Uso do Hook <code className="code">useEffect</code>{" "}
+                para Montagem da Página
               </h3>
               <p>
-                O hook <code>useEffect</code> pode ser usado para realizar ações
-                após o componente ser montado, emulando o comportamento do ciclo
-                de vida <code>componentDidMount</code> em componentes de classe.
+                O hook <code className="code">useEffect</code> pode ser usado
+                para realizar ações após o componente ser montado, emulando o
+                comportamento do ciclo de vida{" "}
+                <code className="code">componentDidMount</code> em componentes
+                de classe.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1301,14 +1314,15 @@ export default ExemploUseEffectMontagem;
               />
 
               <h3>
-                Exemplo de Uso do Hook <code>useEffect</code> para Estado
-                Alterado
+                Exemplo de Uso do Hook <code className="code">useEffect</code>{" "}
+                para Estado Alterado
               </h3>
               <p>
-                O hook <code>useEffect</code> também pode ser usado para
-                realizar ações quando um estado específico é alterado. Isso
-                emula o comportamento do ciclo de vida{" "}
-                <code>componentDidUpdate</code> em componentes de classe.
+                O hook <code className="code">useEffect</code> também pode ser
+                usado para realizar ações quando um estado específico é
+                alterado. Isso emula o comportamento do ciclo de vida{" "}
+                <code className="code">componentDidUpdate</code> em componentes
+                de classe.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1363,10 +1377,10 @@ export default ExemploUseEffectEstado;
                 Os Hooks são uma adição poderosa ao React, permitindo que você
                 emule comportamentos do ciclo de vida e estados em componentes
                 funcionais de maneira mais intuitiva. O hook{" "}
-                <code>useEffect</code> é particularmente útil para lidar com
-                efeitos colaterais, como requisições à API ou manipulação do
-                DOM. Ao adotar Hooks, você pode escrever componentes mais
-                concisos, reutilizáveis e fáceis de manter.
+                <code className="code">useEffect</code> é particularmente útil
+                para lidar com efeitos colaterais, como requisições à API ou
+                manipulação do DOM. Ao adotar Hooks, você pode escrever
+                componentes mais concisos, reutilizáveis e fáceis de manter.
               </p>
             </div>
           ),
@@ -1399,9 +1413,9 @@ export default ExemploUseEffectEstado;
                 No React, você pode atribuir{" "}
                 <strong>manipuladores de eventos</strong> a elementos da mesma
                 forma que faria em HTML puro, usando a sintaxe{" "}
-                <code>onNomeDoEvento</code>. No entanto, em vez de usar strings
-                para representar eventos, você passa funções que serão invocadas
-                quando o evento ocorrer.
+                <code className="code">onNomeDoEvento</code>. No entanto, em vez
+                de usar strings para representar eventos, você passa funções que
+                serão invocadas quando o evento ocorrer.
               </p>
 
               <h3>Exemplo de Lidando com um Evento de Clique</h3>
@@ -1435,8 +1449,9 @@ export default ExemploEventoClique;
               <h3>Lidando com Eventos de Entrada</h3>
               <p>
                 Para lidar com eventos de entrada, como digitação em um campo de
-                texto, você pode usar o evento <code>onChange</code> para
-                atualizar o estado do componente conforme o usuário digita.
+                texto, você pode usar o evento{" "}
+                <code className="code">onChange</code> para atualizar o estado
+                do componente conforme o usuário digita.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1465,7 +1480,8 @@ export default ExemploEventoEntrada;
               <h2>Prevenção do Comportamento Padrão</h2>
               <p>
                 Em eventos como cliques de link ou envios de formulário, você
-                pode usar o método <code>preventDefault()</code> para evitar o
+                pode usar o método{" "}
+                <code className="code">preventDefault()</code> para evitar o
                 comportamento padrão do navegador, como recarregar a página.
               </p>
 
@@ -1517,8 +1533,9 @@ export default ExemploEventoEntrada;
               <h2>Atualizando o Estado com Eventos</h2>
               <p>
                 Para atualizar o estado em resposta a eventos, você pode
-                utilizar a função <code>setState</code> que é fornecida pelo
-                React. A função <code>setState</code> aceita um novo valor de
+                utilizar a função <code className="code">setState</code> que é
+                fornecida pelo React. A função{" "}
+                <code className="code">setState</code> aceita um novo valor de
                 estado ou uma função que atualiza o estado com base no estado
                 anterior.
               </p>
@@ -1601,9 +1618,10 @@ export default ExemploAtualizacaoEstadoAnterior;
               <p>
                 A atualização do estado do componente é fundamental para criar
                 interfaces interativas e responsivas no React. Com a função{" "}
-                <code>setState</code>, você pode modificar o estado de maneira
-                controlada em resposta a eventos, permitindo que a interface
-                reflita as mudanças de forma eficiente e reativa.
+                <code className="code">setState</code>, você pode modificar o
+                estado de maneira controlada em resposta a eventos, permitindo
+                que a interface reflita as mudanças de forma eficiente e
+                reativa.
               </p>
             </div>
           ),
@@ -1621,19 +1639,22 @@ export default ExemploAtualizacaoEstadoAnterior;
               <p>
                 No React, a renderização de <strong>listas dinâmicas</strong> é
                 uma técnica essencial para exibir conjuntos de dados que podem
-                variar em tamanho. Você pode usar métodos como <code>.map</code>
-                , <code>.filter</code> e <code>.forEach</code> para gerar
-                componentes dinamicamente a partir dos elementos da lista.
+                variar em tamanho. Você pode usar métodos como{" "}
+                <code className="code">.map</code>,{" "}
+                <code className="code">.filter</code> e{" "}
+                <code className="code">.forEach</code> para gerar componentes
+                dinamicamente a partir dos elementos da lista.
               </p>
 
               <h2>
-                Renderização com o Método <code>.map</code>
+                Renderização com o Método <code className="code">.map</code>
               </h2>
               <p>
-                O método <code>.map</code> é usado para criar um novo array de
-                elementos, onde cada elemento é o resultado da aplicação de uma
-                função a cada item do array original. É comumente usado para
-                renderizar componentes React de uma lista de dados.
+                O método <code className="code">.map</code> é usado para criar
+                um novo array de elementos, onde cada elemento é o resultado da
+                aplicação de uma função a cada item do array original. É
+                comumente usado para renderizar componentes React de uma lista
+                de dados.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1655,13 +1676,13 @@ export default ListaComMap;
               />
 
               <h2>
-                Renderização com o Método <code>.filter</code>
+                Renderização com o Método <code className="code">.filter</code>
               </h2>
               <p>
-                O método <code>.filter</code> é usado para criar um novo array
-                contendo apenas os elementos que atendem a um determinado
-                critério. Isso é útil para renderizar apenas os itens que você
-                deseja mostrar.
+                O método <code className="code">.filter</code> é usado para
+                criar um novo array contendo apenas os elementos que atendem a
+                um determinado critério. Isso é útil para renderizar apenas os
+                itens que você deseja mostrar.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1686,7 +1707,7 @@ export default ListaComFilter;
 
               <h2>
                 Renderização com o Método{" "}
-                <code>.filter sequido de um .map</code>
+                <code className="code">.filter sequido de um .map</code>
               </h2>
               <CodeBlock
                 language="jsx"
@@ -1709,14 +1730,14 @@ export default ListaComMetodosEmSequencia;
               />
 
               <h2>
-                Renderização com o Método <code>.forEach</code>
+                Renderização com o Método <code className="code">.forEach</code>
               </h2>
               <p>
-                O método <code>.forEach</code> itera sobre os elementos do array
-                original, executando uma função para cada elemento. No entanto,
-                o <code>.forEach</code> não cria um novo array, por isso é menos
-                usado para renderização, já que o retorno de componentes é
-                necessário.
+                O método <code className="code">.forEach</code> itera sobre os
+                elementos do array original, executando uma função para cada
+                elemento. No entanto, o <code className="code">.forEach</code>{" "}
+                não cria um novo array, por isso é menos usado para
+                renderização, já que o retorno de componentes é necessário.
               </p>
               <CodeBlock
                 language="jsx"
@@ -1762,9 +1783,11 @@ export default ListaComForEach;
               <p>
                 A renderização de listas dinâmicas é uma técnica crucial no
                 React para exibir e gerenciar conjuntos de dados variáveis. Ao
-                usar métodos como <code>.map</code>, <code>.filter</code> e{" "}
-                <code>.forEach</code>, você pode criar interfaces interativas
-                que se ajustam de forma reativa às mudanças nos dados exibidos.
+                usar métodos como <code className="code">.map</code>,{" "}
+                <code className="code">.filter</code> e{" "}
+                <code className="code">.forEach</code>, você pode criar
+                interfaces interativas que se ajustam de forma reativa às
+                mudanças nos dados exibidos.
               </p>
             </div>
           ),
@@ -1799,9 +1822,9 @@ export default ListaComForEach;
               <h2>Como Usar Chaves</h2>
               <p>
                 A chave deve ser atribuída a cada elemento renderizado em uma
-                lista, usando o atributo <code>key</code>. A chave deve ser
-                única entre os elementos irmãos, mas não precisa ser globalmente
-                única.
+                lista, usando o atributo <code className="code">key</code>. A
+                chave deve ser única entre os elementos irmãos, mas não precisa
+                ser globalmente única.
               </p>
 
               <h3>Exemplo de Uso de Chaves</h3>
@@ -2268,19 +2291,20 @@ export default PaginaCompleta;
               <h2>Passos para Utilizar o Context</h2>
               <ol>
                 <li>
-                  Crie um contexto: Use a função <code>createContext()</code>{" "}
-                  para criar o contexto.
+                  Crie um contexto: Use a função{" "}
+                  <code className="code">createContext()</code> para criar o
+                  contexto.
                 </li>
                 <li>
                   Crie um provedor de contexto: Crie um componente que envolve
                   os componentes que precisam acessar o contexto. Este
                   componente provedor fornecerá os valores do contexto através
-                  da propriedade <code>value</code>.
+                  da propriedade <code className="code">value</code>.
                 </li>
                 <li>
-                  Consuma o contexto: Use o componente <code>useContext()</code>{" "}
-                  dentro dos componentes consumidores para acessar os valores do
-                  contexto.
+                  Consuma o contexto: Use o componente{" "}
+                  <code className="code">useContext()</code> dentro dos
+                  componentes consumidores para acessar os valores do contexto.
                 </li>
               </ol>
 
@@ -2322,18 +2346,19 @@ export default TemaProvider;
 `}
               />
               <p>
-                O contexto <code>MeuContexto</code> foi criado usando a função{" "}
-                <code>createContext()</code>. Agora você pode importar e usar
-                esse contexto em diferentes partes do seu aplicativo para
-                compartilhar dados e funções.
+                O contexto <code className="code">MeuContexto</code> foi criado
+                usando a função <code className="code">createContext()</code>.
+                Agora você pode importar e usar esse contexto em diferentes
+                partes do seu aplicativo para compartilhar dados e funções.
               </p>
 
               <h2>Adicionando o Provedor do Contexto no index.js</h2>
               <p>
                 Para disponibilizar o contexto para toda a aplicação, adicione o
-                provedor do contexto no arquivo <code>index.js</code> do seu
-                projeto. Isso permitirá que todos os componentes acessarem o
-                contexto compartilhado.
+                provedor do contexto no arquivo{" "}
+                <code className="code">index.js</code> do seu projeto. Isso
+                permitirá que todos os componentes acessarem o contexto
+                compartilhado.
               </p>
               <CodeBlock
                 language="jsx"
@@ -2379,8 +2404,8 @@ ReactDOM.render(
               <p>
                 Importe o contexto previamente criado em um componente onde você
                 deseja consumir os valores globais. Utilize o componente{" "}
-                <code>useContext()</code> para acessar o contexto e os valores
-                dentro dele.
+                <code className="code">useContext()</code> para acessar o
+                contexto e os valores dentro dele.
               </p>
 
               <CodeBlock
@@ -2472,7 +2497,7 @@ ReactDOM.render(
                 Após a instalação, você pode começar a utilizar o React Router
                 em seu aplicativo. Normalmente, a configuração envolve a
                 definição de rotas no componente principal do seu aplicativo
-                (geralmente chamado de <code>App.js</code>).
+                (geralmente chamado de <code className="code">App.js</code>).
               </p>
 
               <CodeBlock
@@ -2508,9 +2533,10 @@ export default App;
               <h2>Navegação entre Páginas</h2>
               <p>
                 Agora você pode criar links de navegação para diferentes páginas
-                usando o componente <code>&lt;Link&gt;</code> do React Router.
-                Isso garante que a navegação seja tratada de forma eficiente sem
-                a necessidade de recarregar a página inteira.
+                usando o componente <code className="code">&lt;Link&gt;</code>{" "}
+                do React Router. Isso garante que a navegação seja tratada de
+                forma eficiente sem a necessidade de recarregar a página
+                inteira.
               </p>
 
               <CodeBlock
@@ -2553,8 +2579,9 @@ export default Menu;
               <h1>Roteamento Sem o Uso do Componente &lt;Link&gt;</h1>
 
               <p>
-                Além do uso do componente <code>&lt;Link&gt;</code> fornecido
-                pelo React Router, você também pode realizar roteamento de forma
+                Além do uso do componente{" "}
+                <code className="code">&lt;Link&gt;</code> fornecido pelo React
+                Router, você também pode realizar roteamento de forma
                 programática sem a necessidade de utilizar esse componente. Isso
                 é útil em cenários onde você deseja controlar a navegação
                 através de funções ou botões personalizados.
@@ -2563,10 +2590,11 @@ export default Menu;
               <h2>Navegação Programática</h2>
               <p>
                 Para realizar a navegação entre páginas sem o uso do{" "}
-                <code>&lt;Link&gt;</code>, você pode utilizar o Hook{" "}
-                <code>useHistory</code> disponibilizado pelo React Router. O{" "}
-                <code>useHistory</code> permite manipular o histórico de
-                navegação e realizar transições de página de forma imperativa.
+                <code className="code">&lt;Link&gt;</code>, você pode utilizar o
+                Hook <code className="code">useHistory</code> disponibilizado
+                pelo React Router. O <code className="code">useHistory</code>{" "}
+                permite manipular o histórico de navegação e realizar transições
+                de página de forma imperativa.
               </p>
 
               <CodeBlock
@@ -2597,8 +2625,9 @@ export default PaginaInicial;
               <h2>Conclusão</h2>
               <p>
                 Ao utilizar funções e botões personalizados, você pode realizar
-                roteamento sem o uso do componente <code>&lt;Link&gt;</code> no
-                React Router. O Hook, <code>useHistory</code> permite que você
+                roteamento sem o uso do componente{" "}
+                <code className="code">&lt;Link&gt;</code> no React Router. O
+                Hook, <code className="code">useHistory</code> permite que você
                 controle a navegação de forma programática, tornando possível
                 transições de página sob demanda através de ações do usuário.
               </p>
@@ -2845,10 +2874,12 @@ export default ErrorMessage;
               <h2>Lidando com Erros na Requisição</h2>
               <p>
                 Você pode tratar erros em requisições a APIs utilizando blocos{" "}
-                <code>try</code> e <code>catch</code> ou utilizando o método{" "}
-                <code>.catch()</code> após a promessa da requisição. Caso ocorra
-                um erro, você pode atualizar o estado para exibir uma mensagem
-                de erro utilizando o componente que você criou.
+                <code className="code">try</code> e{" "}
+                <code className="code">catch</code> ou utilizando o método{" "}
+                <code className="code">.catch()</code> após a promessa da
+                requisição. Caso ocorra um erro, você pode atualizar o estado
+                para exibir uma mensagem de erro utilizando o componente que
+                você criou.
               </p>
 
               <CodeBlock
@@ -3047,23 +3078,26 @@ export default DadosDaApi;
                   />
                 </li>
                 <li>
-                  Crie um arquivo de teste com a extensão <code>.test.js</code>{" "}
-                  ou <code>.spec.js</code> junto ao arquivo que você deseja
-                  testar.
+                  Crie um arquivo de teste com a extensão{" "}
+                  <code className="code">.test.js</code> ou{" "}
+                  <code className="code">.spec.js</code> junto ao arquivo que
+                  você deseja testar.
                 </li>
                 <li>
                   Escreva seus testes dentro desse arquivo utilizando as funções
                   e métodos fornecidos pelo Jest.
                 </li>
                 <li>
-                  Execute seus testes usando o comando <code>npm test</code>.
+                  Execute seus testes usando o comando{" "}
+                  <code className="code">npm test</code>.
                 </li>
               </ol>
 
               <h2>Adicionando o Jest ao package.json</h2>
               <p>
                 Depois de instalar o Jest, você pode configurar o script para
-                executar seus testes no arquivo <code>package.json</code>:
+                executar seus testes no arquivo{" "}
+                <code className="code">package.json</code>:
               </p>
 
               <CodeBlock
@@ -3116,8 +3150,10 @@ export default DadosDaApi;
 
               <ul>
                 <li>
-                  <strong>Matchers:</strong> Funções como <code>expect</code> e{" "}
-                  <code>toBe</code> são usadas para testar resultados esperados.
+                  <strong>Matchers:</strong> Funções como{" "}
+                  <code className="code">expect</code> e{" "}
+                  <code className="code">toBe</code> são usadas para testar
+                  resultados esperados.
                 </li>
                 <li>
                   <strong>Mocking:</strong> O Jest permite criar mocks para
@@ -3145,8 +3181,9 @@ export default DadosDaApi;
 
               <p>
                 O Jest procurará automaticamente por arquivos de teste com as
-                extensões <code>.test.js</code> e <code>.spec.js</code> e
-                executará os testes neles contidos.
+                extensões <code className="code">.test.js</code> e{" "}
+                <code className="code">.spec.js</code> e executará os testes
+                neles contidos.
               </p>
 
               <h2>Verificando Resultados dos Testes</h2>
@@ -3200,14 +3237,15 @@ export default DadosDaApi;
                 </li>
                 <li>
                   <strong>Simulação de Eventos:</strong> Use o método{" "}
-                  <code>fireEvent</code> para simular interações como cliques,
-                  digitação e seleções.
+                  <code className="code">fireEvent</code> para simular
+                  interações como cliques, digitação e seleções.
                 </li>
                 <li>
                   <strong>Seletores de Acessibilidade:</strong> Utilize
-                  atributos acessíveis, como <code>getByText</code> e{" "}
-                  <code>getByRole</code>, para encontrar elementos na árvore de
-                  componentes.
+                  atributos acessíveis, como{" "}
+                  <code className="code">getByText</code> e{" "}
+                  <code className="code">getByRole</code>, para encontrar
+                  elementos na árvore de componentes.
                 </li>
               </ul>
 
@@ -3220,47 +3258,48 @@ export default DadosDaApi;
               <ul>
                 <li>
                   <strong>
-                    <code>render:</code>
+                    <code className="code">render:</code>
                   </strong>{" "}
                   Função para renderizar componentes no teste, retornando uma
                   série de métodos para buscar elementos.
                 </li>
                 <li>
                   <strong>
-                    <code>getByText:</code>
+                    <code className="code">getByText:</code>
                   </strong>{" "}
                   Encontre um elemento pelo seu texto visível.
                 </li>
                 <li>
                   <strong>
-                    <code>getByRole:</code>
+                    <code className="code">getByRole:</code>
                   </strong>{" "}
                   Encontre um elemento pelo seu papel (por exemplo, "button",
                   "heading", etc.).
                 </li>
                 <li>
                   <strong>
-                    <code>getByTestId:</code>
+                    <code className="code">getByTestId:</code>
                   </strong>{" "}
-                  Encontre um elemento pelo atributo <code>data-testid</code>.
+                  Encontre um elemento pelo atributo{" "}
+                  <code className="code">data-testid</code>.
                 </li>
                 <li>
                   <strong>
-                    <code>findBy:</code>
+                    <code className="code">findBy:</code>
                   </strong>{" "}
                   Função assíncrona para buscar elementos, útil para aguardar
                   por elementos que podem estar atrasados.
                 </li>
                 <li>
                   <strong>
-                    <code>waitFor:</code>
+                    <code className="code">waitFor:</code>
                   </strong>{" "}
                   Função para aguardar até que uma condição seja atendida (por
                   exemplo, um elemento apareça ou desapareça).
                 </li>
                 <li>
                   <strong>
-                    <code>fireEvent:</code>
+                    <code className="code">fireEvent:</code>
                   </strong>{" "}
                   Simule eventos como cliques, inputs e teclas.
                 </li>
@@ -3284,7 +3323,8 @@ export default DadosDaApi;
                 </li>
                 <li>
                   <strong>
-                    Use Atributos <code>data-testid</code> com Moderação:
+                    Use Atributos <code className="code">data-testid</code> com
+                    Moderação:
                   </strong>{" "}
                   Eles são úteis para casos complexos, mas podem afetar a
                   semântica do HTML.
@@ -3315,24 +3355,26 @@ export default DadosDaApi;
           conteudo: (
             <div className="content">
               <h1>
-                React Testing Library (RTL): Método <code>render</code>
+                React Testing Library (RTL): Método{" "}
+                <code className="code">render</code>
               </h1>
 
               <p>
-                O método <code>render</code> é uma das principais
-                funcionalidades fornecidas pelo React Testing Library (RTL). Ele
-                é usado para renderizar um componente React dentro de um
-                ambiente de teste, permitindo que você interaja com o componente
-                e teste seu comportamento de maneira realista.
+                O método <code className="code">render</code> é uma das
+                principais funcionalidades fornecidas pelo React Testing Library
+                (RTL). Ele é usado para renderizar um componente React dentro de
+                um ambiente de teste, permitindo que você interaja com o
+                componente e teste seu comportamento de maneira realista.
               </p>
 
               <h2>
-                Uso Básico do Método <code>render</code>
+                Uso Básico do Método <code className="code">render</code>
               </h2>
               <p>
-                Para usar o método <code>render</code>, você pode importá-lo do
-                pacote <code>@testing-library/react</code>. Ele recebe um
-                componente React como argumento e retorna um objeto contendo
+                Para usar o método <code className="code">render</code>, você
+                pode importá-lo do pacote{" "}
+                <code className="code">@testing-library/react</code>. Ele recebe
+                um componente React como argumento e retorna um objeto contendo
                 vários métodos úteis para buscar elementos na árvore de
                 componentes renderizados.
               </p>
@@ -3349,76 +3391,79 @@ const { getByText, getByRole } = render(<MeuComponente />);
               />
 
               <h2>
-                Métodos Retornados pelo <code>render</code>
+                Métodos Retornados pelo <code className="code">render</code>
               </h2>
               <p>
-                O objeto retornado pelo método <code>render</code> inclui uma
-                série de métodos que você pode usar para buscar elementos dentro
-                do componente renderizado:
+                O objeto retornado pelo método{" "}
+                <code className="code">render</code> inclui uma série de métodos
+                que você pode usar para buscar elementos dentro do componente
+                renderizado:
               </p>
 
               <ul>
                 <li>
                   <strong>
-                    <code>getByText:</code>
+                    <code className="code">getByText:</code>
                   </strong>{" "}
                   Busca um elemento pelo seu texto visível.
                 </li>
                 <li>
                   <strong>
-                    <code>getByRole:</code>
+                    <code className="code">getByRole:</code>
                   </strong>{" "}
                   Busca um elemento pelo seu papel (por exemplo, "button",
                   "heading", etc.).
                 </li>
                 <li>
                   <strong>
-                    <code>getByTestId:</code>
+                    <code className="code">getByTestId:</code>
                   </strong>{" "}
-                  Busca um elemento pelo atributo <code>data-testid</code>.
+                  Busca um elemento pelo atributo{" "}
+                  <code className="code">data-testid</code>.
                 </li>
                 <li>
                   <strong>
-                    <code>findBy:</code>
+                    <code className="code">findBy:</code>
                   </strong>{" "}
                   Função assíncrona para buscar elementos, útil para aguardar
                   por elementos que podem estar atrasados.
                 </li>
                 <li>
                   <strong>
-                    <code>waitFor:</code>
+                    <code className="code">waitFor:</code>
                   </strong>{" "}
                   Função para aguardar até que uma condição seja atendida (por
                   exemplo, um elemento apareça ou desapareça).
                 </li>
                 <li>
                   <strong>
-                    <code>queryBy:</code>
+                    <code className="code">queryBy:</code>
                   </strong>{" "}
                   Funciona como os métodos anteriores, mas retorna{" "}
-                  <code>null</code> se o elemento não for encontrado.
+                  <code className="code">null</code> se o elemento não for
+                  encontrado.
                 </li>
                 <li>
                   <strong>
-                    <code>getAllBy:</code>
+                    <code className="code">getAllBy:</code>
                   </strong>{" "}
                   Retorna uma lista de elementos que correspondem ao critério
                   especificado.
                 </li>
                 <li>
                   <strong>
-                    <code>queryAllBy:</code>
+                    <code className="code">queryAllBy:</code>
                   </strong>{" "}
-                  Funciona como <code>getAllBy</code>, mas retorna uma lista
-                  vazia se nenhum elemento for encontrado.
+                  Funciona como <code className="code">getAllBy</code>, mas
+                  retorna uma lista vazia se nenhum elemento for encontrado.
                 </li>
               </ul>
 
               <h2>Exemplo de Uso</h2>
               <p>
-                Aqui está um exemplo de como usar o método <code>render</code> e
-                alguns dos métodos retornados para buscar elementos em um
-                componente renderizado:
+                Aqui está um exemplo de como usar o método{" "}
+                <code className="code">render</code> e alguns dos métodos
+                retornados para buscar elementos em um componente renderizado:
               </p>
 
               <CodeBlock
@@ -3437,11 +3482,11 @@ const botaoElement = getByRole('button', { name: 'Clique-me' });
 
               <h2>Conclusão</h2>
               <p>
-                O método <code>render</code> do React Testing Library é uma
-                ferramenta fundamental para renderizar componentes React em
-                testes. Ele fornece uma série de métodos de busca que permitem
-                interagir com os elementos do componente renderizado de maneira
-                intuitiva e eficiente.
+                O método <code className="code">render</code> do React Testing
+                Library é uma ferramenta fundamental para renderizar componentes
+                React em testes. Ele fornece uma série de métodos de busca que
+                permitem interagir com os elementos do componente renderizado de
+                maneira intuitiva e eficiente.
               </p>
             </div>
           ),
@@ -3476,22 +3521,24 @@ const botaoElement = getByRole('button', { name: 'Clique-me' });
                 <li>
                   Instale as dependências do React Testing Library e do Jest:
                   <pre>
-                    <code>
+                    <code className="code">
                       npm install --save-dev @testing-library/react
                       @testing-library/jest-dom jest
                     </code>
                   </pre>
                 </li>
                 <li>
-                  Crie um arquivo de teste com a extensão <code>.test.js</code>{" "}
-                  ao lado do arquivo que você deseja testar.
+                  Crie um arquivo de teste com a extensão{" "}
+                  <code className="code">.test.js</code> ao lado do arquivo que
+                  você deseja testar.
                 </li>
                 <li>
                   Escreva seus testes dentro desse arquivo utilizando as funções
                   e métodos fornecidos pelo React Testing Library e pelo Jest.
                 </li>
                 <li>
-                  Execute seus testes usando o comando <code>npm test</code>.
+                  Execute seus testes usando o comando{" "}
+                  <code className="code">npm test</code>.
                 </li>
               </ol>
 
@@ -3542,25 +3589,25 @@ test('Deve renderizar o texto corretamente', () => {
               <ul>
                 <li>
                   <strong>
-                    <code>render:</code>
+                    <code className="code">render:</code>
                   </strong>{" "}
                   Função para renderizar o componente no teste.
                 </li>
                 <li>
                   <strong>
-                    <code>getByText:</code>
+                    <code className="code">getByText:</code>
                   </strong>{" "}
                   Função para buscar elementos pelo texto.
                 </li>
                 <li>
                   <strong>
-                    <code>findByText:</code>
+                    <code className="code">findByText:</code>
                   </strong>{" "}
                   Função assíncrona para buscar elementos pelo texto.
                 </li>
                 <li>
                   <strong>
-                    <code>fireEvent:</code>
+                    <code className="code">fireEvent:</code>
                   </strong>{" "}
                   Função para simular eventos como cliques e inputs.
                 </li>
@@ -3605,8 +3652,9 @@ test('Deve renderizar o texto corretamente', () => {
                 </li>
                 <li>
                   <strong>Crie seus Testes:</strong> Crie arquivos de teste com
-                  a extensão <code>.test.js</code> ou <code>.spec.js</code> para
-                  os componentes e fluxos que você deseja testar.
+                  a extensão <code className="code">.test.js</code> ou{" "}
+                  <code className="code">.spec.js</code> para os componentes e
+                  fluxos que você deseja testar.
                 </li>
                 <li>
                   <strong>Importe Componentes:</strong> Importe os componentes
@@ -3614,14 +3662,15 @@ test('Deve renderizar o texto corretamente', () => {
                 </li>
                 <li>
                   <strong>Use Métodos do RTL:</strong> Use os métodos do React
-                  Testing Library, como <code>render</code> para renderizar
-                  componentes e <code>getBy</code> para buscar elementos na
+                  Testing Library, como <code className="code">render</code>{" "}
+                  para renderizar componentes e{" "}
+                  <code className="code">getBy</code> para buscar elementos na
                   árvore renderizada.
                 </li>
                 <li>
                   <strong>Realize Interações:</strong> Simule interações do
                   usuário, como cliques e preenchimento de formulários, usando o
-                  método <code>fireEvent</code> do RTL.
+                  método <code className="code">fireEvent</code> do RTL.
                 </li>
                 <li>
                   <strong>Verifique Resultados:</strong> Use asserções do Jest
@@ -3679,9 +3728,10 @@ test('Teste de Integração', () => {
                   separados para manter o código de teste organizado.
                 </li>
                 <li>
-                  <strong>Use o State e Props:</strong> Use <code>props</code>{" "}
-                  para injetar dados nos componentes e <code>fireEvent</code>{" "}
-                  para simular interações.
+                  <strong>Use o State e Props:</strong> Use{" "}
+                  <code className="code">props</code> para injetar dados nos
+                  componentes e <code className="code">fireEvent</code> para
+                  simular interações.
                 </li>
               </ul>
 
@@ -3722,18 +3772,19 @@ test('Teste de Integração', () => {
               <ol>
                 <li>
                   <strong>Renderize o Componente:</strong> Use o método{" "}
-                  <code>render</code> do RTL para renderizar o componente que
-                  deseja testar.
+                  <code className="code">render</code> do RTL para renderizar o
+                  componente que deseja testar.
                 </li>
                 <li>
                   <strong>Encontre Elementos:</strong> Use os métodos do RTL
                   para localizar elementos na árvore renderizada, como{" "}
-                  <code>getBy</code> e <code>queryBy</code>.
+                  <code className="code">getBy</code> e{" "}
+                  <code className="code">queryBy</code>.
                 </li>
                 <li>
                   <strong>Simule Interações:</strong> Use o método{" "}
-                  <code>fireEvent</code> para simular ações do usuário, como
-                  cliques, digitação e mais.
+                  <code className="code">fireEvent</code> para simular ações do
+                  usuário, como cliques, digitação e mais.
                 </li>
                 <li>
                   <strong>Verifique Resultados:</strong> Use asserções do Jest
@@ -3886,25 +3937,57 @@ test('Teste de Interface: Preenchendo e Enviando Formulário', () => {
         },
         {
           text: "Testes de Snapshot",
-          conteudo: <div className="content">
-            <h1>Testes de Snapshot com Jest e React Testing Library</h1>
+          conteudo: (
+            <div className="content">
+              <h1>Testes de Snapshot com Jest e React Testing Library</h1>
 
-<p>Os testes de snapshot são uma forma eficaz de verificar se a saída renderizada dos componentes permanece consistente ao longo do tempo. Usando o Jest e o React Testing Library, você pode criar snapshots para componentes e compará-los com as versões anteriores para detectar alterações indesejadas.</p>
+              <p>
+                Os testes de snapshot são uma forma eficaz de verificar se a
+                saída renderizada dos componentes permanece consistente ao longo
+                do tempo. Usando o Jest e o React Testing Library, você pode
+                criar snapshots para componentes e compará-los com as versões
+                anteriores para detectar alterações indesejadas.
+              </p>
 
-<h2>Testando Snapshots</h2>
-<p>Os testes de snapshot envolvem a captura do estado renderizado dos seus componentes e a comparação com snapshots anteriores. Isso ajuda a detectar mudanças inesperadas na renderização que podem ocorrer durante o desenvolvimento.</p>
+              <h2>Testando Snapshots</h2>
+              <p>
+                Os testes de snapshot envolvem a captura do estado renderizado
+                dos seus componentes e a comparação com snapshots anteriores.
+                Isso ajuda a detectar mudanças inesperadas na renderização que
+                podem ocorrer durante o desenvolvimento.
+              </p>
 
-<ol>
-  <li><strong>Criando Snapshots:</strong> Use o método <code>toMatchSnapshot</code> do Jest para criar snapshots de componentes.</li>
-  <li><strong>Primeira Execução:</strong> Na primeira execução, o Jest cria os snapshots e os armazena.</li>
-  <li><strong>Execuções Posteriores:</strong> Nas execuções seguintes, o Jest compara os snapshots atuais com os armazenados anteriormente.</li>
-  <li><strong>Atualização de Snapshots:</strong> Se uma alteração for intencional, você pode atualizar os snapshots usando a opção <code>--updateSnapshot</code>.</li>
-</ol>
+              <ol>
+                <li>
+                  <strong>Criando Snapshots:</strong> Use o método{" "}
+                  <code className="code">toMatchSnapshot</code> do Jest para
+                  criar snapshots de componentes.
+                </li>
+                <li>
+                  <strong>Primeira Execução:</strong> Na primeira execução, o
+                  Jest cria os snapshots e os armazena.
+                </li>
+                <li>
+                  <strong>Execuções Posteriores:</strong> Nas execuções
+                  seguintes, o Jest compara os snapshots atuais com os
+                  armazenados anteriormente.
+                </li>
+                <li>
+                  <strong>Atualização de Snapshots:</strong> Se uma alteração
+                  for intencional, você pode atualizar os snapshots usando a
+                  opção <code className="code">--updateSnapshot</code>.
+                </li>
+              </ol>
 
-<h2>Exemplo de Teste de Snapshot</h2>
-<p>Aqui está um exemplo de um teste de snapshot usando o Jest e o React Testing Library:</p>
+              <h2>Exemplo de Teste de Snapshot</h2>
+              <p>
+                Aqui está um exemplo de um teste de snapshot usando o Jest e o
+                React Testing Library:
+              </p>
 
-<CodeBlock language="jsx" code={`
+              <CodeBlock
+                language="jsx"
+                code={`
 import React from 'react';
 import { render } from '@testing-library/react';
 import MeuComponente from './MeuComponente';
@@ -3916,21 +3999,74 @@ test('Teste de Snapshot', () => {
   // Cria um snapshot e compara com versão anterior
   expect(asFragment()).toMatchSnapshot();
 });
-`} />
+`}
+              />
 
-<h2>Dicas para Testes de Snapshot</h2>
-<p>Aqui estão algumas dicas para realizar testes de snapshot eficazes:</p>
+              <h2>Dicas para Testes de Snapshot</h2>
+              <p>
+                Aqui estão algumas dicas para realizar testes de snapshot
+                eficazes:
+              </p>
 
-<ul>
-  <li><strong>Atualizações Intencionais:</strong> Se você fizer alterações intencionais na renderização, atualize os snapshots para refletir essas mudanças.</li>
-  <li><strong>Cuidado com Alterações Inesperadas:</strong> Os testes de snapshot ajudam a detectar mudanças não planejadas na renderização, como alterações visuais indesejadas.</li>
-  <li><strong>Combine com Outros Testes:</strong> Os testes de snapshot são uma ferramenta útil, mas podem ser complementados por outros tipos de testes, como testes de unidade e testes de interface.</li>
-</ul>
+              <ul>
+                <li>
+                  <strong>Atualizações Intencionais:</strong> Se você fizer
+                  alterações intencionais na renderização, atualize os snapshots
+                  para refletir essas mudanças.
+                </li>
+                <li>
+                  <strong>Cuidado com Alterações Inesperadas:</strong> Os testes
+                  de snapshot ajudam a detectar mudanças não planejadas na
+                  renderização, como alterações visuais indesejadas.
+                </li>
+                <li>
+                  <strong>Combine com Outros Testes:</strong> Os testes de
+                  snapshot são uma ferramenta útil, mas podem ser complementados
+                  por outros tipos de testes, como testes de unidade e testes de
+                  interface.
+                </li>
+              </ul>
 
-<h2>Conclusão</h2>
-<p>Os testes de snapshot com o Jest e o React Testing Library são uma maneira eficaz de verificar se a renderização dos componentes permanece consistente ao longo do desenvolvimento. Eles ajudam a identificar alterações inesperadas na aparência e no comportamento do seu aplicativo.</p>
+              <h2>Conclusão</h2>
+              <p>
+                Os testes de snapshot com o Jest e o React Testing Library são
+                uma maneira eficaz de verificar se a renderização dos
+                componentes permanece consistente ao longo do desenvolvimento.
+                Eles ajudam a identificar alterações inesperadas na aparência e
+                no comportamento do seu aplicativo.
+              </p>
+            </div>
+          ),
+        },
+      ],
+    ],
+  ],
+];
 
-          </div>,
+export const contentJavascript = [
+  [
+    "Javascript Basico",
+    [
+      [
+        "Comecando no Javascript",
+        {
+          text: "Primeiros passos na logica",
+          conteudo: <div></div>,
+        },
+      ],
+    ],
+  ],
+];
+
+export const contentCss = [
+  [
+    "Css Basico",
+    [
+      [
+        "Primeiros Estilos",
+        {
+          text: "Primeiros passos no Css",
+          conteudo: <div></div>,
         },
       ],
     ],

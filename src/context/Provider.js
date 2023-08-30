@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import pocketContext from './pocketContext';
-import MainPage from '../components/MainContent/MainPage/MainPage';
 
 const themes = {
   light: {
@@ -22,6 +21,8 @@ const themes = {
 function Provider({ children }) {
   const [page, setPage] = useState('');
   const [title, setTitle] = useState('');
+  const [displayContent, setDisplay] = useState();
+  const [content, setContent] = useState('React Basics');
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? JSON.parse(localStorage.getItem('theme')) : themes.light);
 
 
@@ -33,6 +34,10 @@ function Provider({ children }) {
 
 
   const contextValue = {
+    content,
+    displayContent,
+    setDisplay,
+    setContent,
     theme,
     setTheme,
     toggleTheme,
