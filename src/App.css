@@ -3,6 +3,9 @@
   --leftmargin: 2vw;
   --topmargin: 2vh;
   --navwidth: 14vw;
+  --bigfont: 1.5rem;
+  --medfont: 1.1rem;
+  --smallfont: 0.7rem;
 }
 
 hr {

@@ -2,7 +2,7 @@
   position: fixed;
   overflow-y: scroll;
   overflow-x: auto;
-  font-size: 11px;
+  font-size: var(--smallfont);
   margin-top: calc(var(--headerheigth) + 2vh);
   width: calc(var(--navwidth) * 1.3);
   min-height: calc(100vh - var(--headerheigth));
@@ -20,13 +20,13 @@
 }
 
 .main-btn {
-  font-size: 12px;
+  font-size: var(--medfont);
   font-weight: bolder;
 }
 
 .titulo {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: calc(var(--bigfont) - 2px );
 }
 
 .difi {
@@ -41,6 +41,8 @@
   align-items: center;
   justify-content: end;
   padding: 5px;
+  font-size: var(--medfont);
+  margin-bottom: 2vh;
 }
 
 .sub-btn p {

@@ -9,8 +9,9 @@
   flex-wrap: nowrap;
 }
 
-.Header h1 {
+.course-title {
   align-self: center;
+  font-size: var(--bigfont);;
 }
 
 .Header .row {
@@ -20,7 +21,7 @@
 
 .title {
   display: block;
-  font-size: 20px;
+  font-size: var(--medfont);
   word-wrap: break-word;
   align-self: center;
   margin-right: 5vw;

@@ -23,7 +23,7 @@ const Header = () => {
   return (
   <div className="Header row s-btw">
     <div className='row'>
-      <h1>{ content }</h1>
+      <h1 className='course-title'>{ content }</h1>
     </div>
     <h1 className='title'>{ title }</h1>
     <nav className='row nav-icons'>

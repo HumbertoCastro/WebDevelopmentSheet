@@ -10,8 +10,10 @@
   margin-bottom: 10px;
   margin-left: 0;
   margin-top: 10px;
+  font-size: calc(var(--bigfont) * 1.8 );
 }
 
 .MainPage p {
+  font-size: var(--bigfont);
   margin-bottom: 3vh;
 }
