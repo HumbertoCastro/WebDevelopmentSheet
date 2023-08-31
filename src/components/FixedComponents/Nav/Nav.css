@@ -25,8 +25,8 @@
 }
 
 .titulo {
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .difi {
@@ -37,16 +37,21 @@
 
 .sub-btn {
   flex-wrap: nowrap;
-  margin-top: var(--topmargin);
+  height: 4vh;
+  align-items: center;
+  justify-content: end;
+  padding: 5px;
+}
+
+.sub-btn p {
+  align-self: center;
 }
 
 .content {
-  margin-left: var(--leftmargin);
   margin-top: var(--topmargin);
 }
 
 .sub-div {
-  margin-left: var(--leftmargin);
   margin-bottom: 10px;
   margin-top: var(--topmargin);
   white-space: normal;

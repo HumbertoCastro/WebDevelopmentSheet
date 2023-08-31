@@ -2,7 +2,7 @@ import CodeBlock from "../components/CodeBlock/CodeBlock";
 
 export const contentReact = [
   [
-    "basic",
+    "basico",
     [
       [
         "Começando com React",
@@ -1389,7 +1389,7 @@ export default ExemploUseEffectEstado;
     ],
   ],
   [
-    "intermediate",
+    "intermediario",
     [
       [
         "Eventos e Manipulação do DOM",
@@ -2269,7 +2269,7 @@ export default PaginaCompleta;
     ],
   ],
   [
-    "advanced",
+    "avançado",
     [
       [
         "Estado Global",

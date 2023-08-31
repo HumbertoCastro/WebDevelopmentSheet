@@ -17,9 +17,9 @@ const CodeBlock = ({ language, code }) => {
 
   return (
     <div className="code-block">
-      <button onClick={copyCodeToClipboard} className='colunm copy-btn'>
-        {copied ? <div className='row'>{ svgs.copycheck() }<p>Copied !</p> </div> : 
-        <div className='row'>{ svgs.copy() }<p>Copy Code</p> </div>}
+      <button onClick={copyCodeToClipboard} className='colunm copy-btn pointer'>
+        {copied ? <div className='row'>{ svgs.copycheck }<p>Copied !</p> </div> : 
+        <div className='row'>{ svgs.copy }<p>Copy Code</p> </div>}
       </button>
       <SyntaxHighlighter language={language} style={darcula}>
         {code}

@@ -14,7 +14,11 @@ const Header = () => {
 
   useEffect(() => {
     setDisplay(contentReact);
-  }, [])
+  }, []);
+
+  const changeClass = (target) => {
+    console.log(target.className);
+  }
 
   return (
   <div className="Header row s-btw">
@@ -23,28 +27,31 @@ const Header = () => {
     </div>
     <h1 className='title'>{ title }</h1>
     <nav className='row nav-icons'>
-      <div className='btn-icon' onClick={ () => {
-        setContent('JavaScript Cheat Sheet');
+      <div className='btn-icon pointer' onClick={ ({ target }) => {
+        setContent('Fundamentos do JavaScript');
         setDisplay(contentJavascript);
+        changeClass(target);
       } }>
         {
-          svgs.javascript()
+          svgs.javascript
         }
       </div>
-      <div className='btn-icon' onClick={ () => {
-        setContent('Css tips and tricks');
+      <div className='btn-icon pointer' onClick={ ({ target }) => {
+        setContent('Css: Dicas e truques');
         setDisplay(contentCss);
+        changeClass(target);
       }  }>
         {
-          svgs.css()
+          svgs.css
         }
       </div>
-      <div className='btn-icon react-icon' onClick={ () => {
-        setContent('Learn React');
+      <div className='btn-icon pointer react-icon' onClick={ ({ target }) => {
+        setContent('Aprenda React');
         setDisplay(contentReact); 
+        changeClass(target);
       }  }>
         {
-          svgs.react()
+          svgs.react
         }
       </div>
     </nav>

@@ -17,11 +17,11 @@ const ContentNav = ({ dificult }) => {
 
   return (
     <div className='difi'>
-      <div className='row s-btw nav-btn' onClick={ () => setOpen(!open) }>
+      <div className='row s-btw nav-btn pointer' onClick={ () => setOpen(!open) }>
         <div className='main-btn'>{ dificult[0] }</div>
         <div style={ open ? { transform: 'rotate(180deg)', transition: 'transform 150ms ease' } : { transition: 'transform 150ms ease' } }>
           {
-            svgs.dropdow()
+            svgs.dropdow
           }
         </div>
       </div>
@@ -34,16 +34,19 @@ const ContentNav = ({ dificult }) => {
           <div className='sub-div'>
             {
               content.filter((x) => x !== content[0]).map(y => 
-                <div className='sub-btn nav-btn' onClick={() => {
-                  setPage(y.conteudo);
-                  setTitle(`${content[0]}, ${y.text}`)
-                }}>
-                  {
-                    title === `${content[0]}, ${y.text}` ? 
-                    <img src={ logo } className='side-logo' alt='imglogo'/> :
-                    null
-                  }
-                  { y.text }
+                <div
+                  className={
+                    title === `${content[0]}, ${y.text}` ? `sub-btn nav-btn pointer clicked` : 'sub-btn nav-btn pointer'
+                  } 
+                  onClick={() => {
+                    setPage(y.conteudo);
+                    setTitle(`${content[0]}, ${y.text}`)
+                  }}>
+                    <p>
+                      {
+                        y.text
+                      }
+                    </p>
                 </div>
               )
             }

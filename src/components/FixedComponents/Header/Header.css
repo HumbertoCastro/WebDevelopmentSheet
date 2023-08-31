@@ -26,6 +26,12 @@
   margin-right: 5vw;
 }
 
+.selected {
+  background-color: #a0dbff;
+  color: white;
+  height: 3vh;
+}
+
 .nav-icons {
   align-items: center;
   justify-content: space-around;
