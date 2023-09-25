@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import pocketContext from './pocketContext';
+import { startReact } from '../Helpers/StartContents';
 
 const themes = {
   light: {
@@ -19,7 +20,7 @@ const themes = {
 };
 
 function Provider({ children }) {
-  const [page, setPage] = useState('');
+  const [page, setPage] = useState(startReact);
   const [title, setTitle] = useState('');
   const [displayContent, setDisplay] = useState();
   const [content, setContent] = useState('React Basics');

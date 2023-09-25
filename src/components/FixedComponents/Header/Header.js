@@ -3,6 +3,8 @@ import './Header.css';
 import pocketContext from '../../../context/pocketContext';
 import svgs from '../../../Helpers/svg';
 import { contentReact, contentCss, contentJavascript } from '../../../Helpers/Content';
+import { startReact } from '../../../Helpers/StartContents';
+import SelectContentBtn from '../../Inputs/SelectContentBtn/SelectContentBtn';
 
 const Header = () => {
   const {
@@ -10,50 +12,23 @@ const Header = () => {
     content,
     setContent,
     setDisplay,
+    setPage,
   } = useContext(pocketContext);
 
   useEffect(() => {
     setDisplay(contentReact);
   }, []);
 
-  const changeClass = (target) => {
-    console.log(target.className);
-  }
-
   return (
   <div className="Header row s-btw">
     <div className='row'>
       <h1 className='course-title'>{ content }</h1>
     </div>
-    <h1 className='title'>{ title }</h1>
+    <h1 className='header-title'>{ title }</h1>
     <nav className='row nav-icons'>
-      <div className='btn-icon pointer' onClick={ ({ target }) => {
-        setContent('Fundamentos do JavaScript');
-        setDisplay(contentJavascript);
-        changeClass(target);
-      } }>
-        {
-          svgs.javascript
-        }
-      </div>
-      <div className='btn-icon pointer' onClick={ ({ target }) => {
-        setContent('Css: Dicas e truques');
-        setDisplay(contentCss);
-        changeClass(target);
-      }  }>
-        {
-          svgs.css
-        }
-      </div>
-      <div className='btn-icon pointer react-icon' onClick={ ({ target }) => {
-        setContent('Aprenda React');
-        setDisplay(contentReact); 
-        changeClass(target);
-      }  }>
-        {
-          svgs.react
-        }
-      </div>
+      <SelectContentBtn text='Fundamentos do JavaScript' content={contentJavascript} svgs={svgs.javascript} page={startReact} />
+      <SelectContentBtn text='CSS: Dicas e truques' content={contentCss} svgs={svgs.css} page={startReact} />
+      <SelectContentBtn text='Aprenda React' content={contentReact} svgs={svgs.react} page={startReact} />
     </nav>
   </div>
 )};

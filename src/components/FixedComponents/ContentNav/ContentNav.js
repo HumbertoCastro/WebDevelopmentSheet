@@ -40,7 +40,8 @@ const ContentNav = ({ dificult }) => {
                   } 
                   onClick={() => {
                     setPage(y.conteudo);
-                    setTitle(`${content[0]}, ${y.text}`)
+                    setTitle(`${content[0]}, ${y.text}`);
+                    setOpen(false);
                   }}>
                     <p>
                       {

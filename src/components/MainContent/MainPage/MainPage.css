@@ -1,19 +1,42 @@
+@media only screen and (min-width: 768px) {
+  .MainPage {
+    width: calc(60vw - var(--navwidth));
+    margin-right: 10vw;
+    font-weight: 400;
+    color: rgb(35 39 47);
+    margin: calc(var(--headerheigth) + 5vh) auto;
+  }
+
+  .MainPage h1 {
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: calc(var(--bigfont) * 1.8 );
+  }
+
+  .MainPage p {
+    font-size: var(--bigfont);
+    margin-bottom: 3vh;
+  }
+}
+
 .MainPage {
-  width: calc(60vw - var(--navwidth));
+  width: 96vw;
   margin-right: 10vw;
-  font-weight: 400;
   color: rgb(35 39 47);
-  margin: calc(var(--headerheigth) + 5vh) auto;
+  margin: auto;
 }
 
 .MainPage h1 {
   margin-bottom: 10px;
   margin-left: 0;
   margin-top: 10px;
-  font-size: calc(var(--bigfont) * 1.8 );
+  font-size: calc(var(--bigfont) * 1.5 );
+  font-weight: bolder;
 }
 
 .MainPage p {
-  font-size: var(--bigfont);
+  font-size: var(--medfont);
   margin-bottom: 3vh;
+  font-weight: 500;
 }
